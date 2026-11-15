@@ -164,3 +164,74 @@ Nhóm tiếp thu các phản biện phù hợp của Gemini, điều chỉnh m�
 Nhóm không sao chép nguyên trạng kết quả của AI mà chủ động đối chiếu, đánh giá và quyết định phạm vi thực hiện.
 
 ---
+
+---
+
+# 2. Xây dựng tài liệu hướng dẫn cho AI (AGENTS.md)
+
+**Công cụ:** ChatGPT
+
+**Mục đích:**
+Xây dựng tài liệu AGENTS.md nhằm cung cấp các nguyên tắc và hướng dẫn để AI hỗ trợ dự án đúng phạm vi đã thống nhất. Tài liệu định hướng AI về bối cảnh dự án, phạm vi chức năng, nguyên tắc lập trình, kiến trúc, nghiệp vụ, bảo mật và quy trình làm việc.
+
+### Prompt chính
+
+### Project Instructions for AI
+
+### 1. Project context
+Đây là dự án website thương mại điện tử của sinh viên.
+
+### 2. Scope
+Chỉ triển khai các chức năng đã được nhóm thống nhất
+trong REQUIREMENTS.md.
+
+### 3. Coding principles
+- Giữ mã nguồn dễ đọc và dễ bảo trì.
+- Không thay đổi kiến trúc lớn khi chưa được nhóm đồng ý.
+- Không tự ý xóa chức năng đang hoạt động.
+- Ưu tiên thay đổi nhỏ, có thể kiểm tra.
+
+### 4. Workflow
+Trước khi sửa mã nguồn:
+1. Đọc các tài liệu liên quan.
+2. Phân tích hiện trạng.
+3. Đề xuất phương án.
+4. Chờ nhóm xác nhận.
+
+Sau khi sửa mã nguồn:
+1. Giải thích các thay đổi.
+2. Nêu file đã sửa.
+3. Hướng dẫn chạy và kiểm thử.
+4. Báo cáo các giới hạn còn tồn tại.
+
+### 5. Security
+- Không đưa mật khẩu, API key hoặc token vào mã nguồn.
+- Không tự ý vô hiệu hóa kiểm tra bảo mật.
+- Không sử dụng dữ liệu cá nhân thật khi chưa được phép.
+
+### 6. Communication
+Nếu yêu cầu chưa rõ, hãy hỏi lại trước khi triển khai.
+
+### Kết quả AI
+
+ChatGPT đã tạo nội dung tài liệu AGENTS.md gồm 13 nhóm hướng dẫn:
+
+1. **Tổng quan dự án:** Mô tả website thương mại điện tử, sản phẩm kinh doanh, khách hàng mục tiêu và mục tiêu hệ thống.
+2. **Phạm vi dự án:** Xác định các chức năng dự kiến triển khai và yêu cầu AI tuân thủ REQUIREMENTS.md.
+3. **Công nghệ sử dụng:** Hướng dẫn AI kiểm tra cấu hình hiện có, giữ nguyên framework và không tự ý thêm thư viện.
+4. **Cấu trúc dự án:** Yêu cầu kiểm tra cấu trúc thư mục trước khi chỉnh sửa, không tự ý di chuyển hoặc đổi tên tệp.
+5. **Quy tắc lập trình:** Ưu tiên mã nguồn dễ đọc, dễ bảo trì, tái sử dụng và hạn chế trùng lặp.
+6. **Kiến trúc hệ thống:** Giữ kiến trúc hiện tại, không tự ý thay đổi lớn hoặc xóa chức năng đang hoạt động.
+7. **Quy tắc nghiệp vụ:** Đưa ra các nguyên tắc liên quan đến sản phẩm, tồn kho, giỏ hàng, đặt hàng, đơn hàng và phân quyền.
+8. **Bảo mật:** Không để lộ thông tin bí mật, sử dụng cơ chế băm mật khẩu, kiểm tra dữ liệu đầu vào và hạn chế các rủi ro bảo mật phổ biến.
+9. **Quy trình làm việc:** Yêu cầu AI đọc tài liệu, phân tích hiện trạng, đề xuất phương án và chờ xác nhận trước khi sửa mã nguồn; sau khi thực hiện phải báo cáo thay đổi.
+10. **Kiểm thử:** Hướng dẫn kiểm tra chức năng sau khi chỉnh sửa và báo cáo kết quả thực tế.
+11. **Giao tiếp:** Ưu tiên trao đổi bằng tiếng Việt, hỏi lại khi yêu cầu chưa rõ và giải thích các thay đổi.
+12. **Chức năng ngoài phạm vi:** Liệt kê các chức năng không thuộc phạm vi triển khai như thanh toán trực tuyến qua cổng thực tế, tích hợp đơn vị vận chuyển và ứng dụng di động.
+13. **Thứ tự ưu tiên:** Ưu tiên yêu cầu trong tài liệu dự án, bảo mật, giữ nguyên kiến trúc và hạn chế thay đổi ngoài phạm vi được duyệt.
+
+### Đánh giá và quyết định của nhóm
+
+Nhóm sử dụng nội dung AI đề xuất làm cơ sở xây dựng tài liệu hướng dẫn cho các công cụ AI hỗ trợ quá trình phát triển website. Nội dung được tham khảo nhằm định hướng AI tuân thủ phạm vi dự án, nguyên tắc lập trình, bảo mật và quy trình làm việc.
+
+Trong quá trình triển khai, nhóm sẽ đối chiếu các hướng dẫn trong AGENTS.md với REQUIREMENTS.md và tình hình thực tế của mã nguồn để điều chỉnh khi cần thiết. Các nội dung chưa phù hợp với phạm vi hoặc chưa được xác nhận sẽ không mặc nhiên được xem là yêu cầu chính thức của dự án.
