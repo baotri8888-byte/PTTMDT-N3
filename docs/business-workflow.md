@@ -126,3 +126,17 @@ flowchart TD
 - Đặt hàng không vượt số lượng tồn kho; hủy đơn hợp lệ hoàn lại tồn kho.
 - Các quy trình bắt buộc **[BB]** có thể được trình diễn và kiểm thử.
 - Các điểm **[XM]** được nhóm xác nhận trước khi triển khai.
+## 6. Ca kiểm thử nghiệp vụ trọng yếu
+
+| Mã | Tình huống | Kết quả mong đợi |
+|---|---|---|
+| TC01 | Đặt hàng với số lượng đủ tồn kho | Tạo đơn "Mới", tồn kho giảm đúng số lượng, giỏ hàng được xóa món đã đặt. |
+| TC02 | Đặt hàng khi tồn kho không đủ | Báo lỗi, không tạo đơn, tồn kho không đổi. |
+| TC03 | Hai khách cùng đặt món cuối cùng | Chỉ một đơn thành công, tồn kho không âm. |
+| TC04 | Giảm số lượng trong giỏ về 0 | Món tự động bị xóa khỏi giỏ. |
+| TC05 | Hủy đơn ở trạng thái "Mới" hoặc "Đã xác nhận" | Đơn thành "Đã hủy", tồn kho cộng lại đúng số lượng; so sánh tồn kho trước và sau. |
+| TC06 | Hủy đơn ở trạng thái "Đang giao" | Hệ thống từ chối, không đổi tồn kho. |
+| TC07 | Khách chưa đăng nhập bấm "Đặt hàng" | Được chuyển sang đăng nhập/đăng ký, giỏ hàng vẫn giữ nguyên. |
+| TC08 | Khách hàng truy cập trang quản trị | Bị từ chối (không đủ quyền). |
+| TC09 | Khách xem đơn của người khác (đổi mã đơn trên đường dẫn) | Bị từ chối. |
+| TC10 | Admin thêm sản phẩm với giá ≤ 0 hoặc tồn kho âm | Báo lỗi, không lưu. |
