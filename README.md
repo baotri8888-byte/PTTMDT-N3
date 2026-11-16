@@ -94,3 +94,4 @@ Các nội dung cần xác nhận:
 - Bảng yêu cầu: [REQUIREMENTS.md](REQUIREMENTS.md)
 - Kế hoạch: [PROJECT_PLAN.md](PROJECT_PLAN.md)
 - Phân tích website: [docs/competitor-analysis.md](docs/competitor-analysis.md)
+- Mô tả quy trình nghiệp vụ chính: [docs/business-workflow.md](docs/business-workflow.md)
