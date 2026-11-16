@@ -52,14 +52,11 @@ Dự án xây dựng website thương mại điện tử chuyên kinh doanh văn
 
 ## 5. Công nghệ dự kiến
 
-Theo tài liệu hiện tại, nhóm **chưa thống nhất chính thức công nghệ và kiến trúc hệ thống**.
-
-Các nội dung cần xác nhận:
-- **Front-end:** Ngôn ngữ và công cụ xây dựng giao diện.
-- **Back-end:** Ngôn ngữ hoặc framework xử lý nghiệp vụ.
-- **Database:** Hệ quản trị cơ sở dữ liệu.
-- **Kiến trúc:** Phương án tổ chức và kết nối các thành phần hệ thống.
-- **Quản lý mã nguồn:** Git và GitHub, sử dụng Issues để phân công và theo dõi công việc.
+- **Front-end:** HTML, CSS, JavaScript
+- **Back-end:** Node.js (Express)
+- **Cơ sở dữ liệu:** MySQL (truy vấn bằng Prepared Statements hoặc ORM)
+- **Quản lý mã nguồn và công việc:** Git, GitHub (Issues)
+- **Thiết kế:** wireframe/prototype (Figma hoặc công cụ tương đương)
 
 ## 6. Kế hoạch thực hiện
 
